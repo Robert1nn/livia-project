@@ -1,0 +1,124 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.img_logo{
+    height: 60px;
+    width: 70px;
+}
+
+/* .img_seta{
+    height: 25px;
+    width: 40px;
+} */
+
+html, body{
+    background-image: linear-gradient(to bottom,#65b307, yellow );
+    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 190vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .header{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    margin-bottom: 10px;
+    color:black;
+    font-style:oblique ;
+}
+
+.container .header span{
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.container form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container form .InputContainer{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.container form .InputContainer label{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.container form .InputContainer input{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+
+    width: 520px;
+    height: 49px;
+
+    border: 1px solid #5c73db;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.container form a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: rgb(40, 237, 66), 219, 92);
+}
+
+.container form .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    border: none;
+    width: 520px;
+    height: 48px;
+    background: #2cdb32;
+    border-radius: 12px;
+    padding: 17px;
+    color: #fff;
+}
+
+.container form .button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.container form .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container form .footer p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+    padding: 15px;
+}
