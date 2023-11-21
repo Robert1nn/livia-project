@@ -18,10 +18,13 @@ export function Login() {
   function handleSingIn(e) {
     e.preventDefault();
     signInWithEmailAndPassword(email, password);
-  }
 
-  if (loading) {
-    return <p> Carregando... </p>
+    try {
+      handleSingIn
+    } catch (error) {
+      message.error('Invalid email or passwword')
+    }
+
   }
   if (user) {
     return console.log(user);
@@ -56,11 +59,8 @@ export function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-
-        <a href="#"> Esqueceu sua senha ? </a>
-
         <button className="button" onClick={handleSingIn}>
-          Entrar <img src="" alt="" />
+          Entrar <Link to="/Home"> </Link>
         </button>
 
         <div className="footer">
